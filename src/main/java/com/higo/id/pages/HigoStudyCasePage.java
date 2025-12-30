@@ -45,7 +45,6 @@ public class HigoStudyCasePage {
     }
 
     public HigoStudyCaseDetailPage clickCard(String cardName) {
-        // User requested: //a[.//div[text()='...']]
         By cardLocator = By.xpath("//a[.//div[normalize-space()='" + cardName + "']]");
 
         WebElement card = wait.until(ExpectedConditions.presenceOfElementLocated(cardLocator));
@@ -57,8 +56,6 @@ public class HigoStudyCasePage {
         } catch (Exception e) {
             new org.openqa.selenium.interactions.Actions(driver).moveToElement(card).click().perform();
         }
-
-        // Wait for URL to change or title to update implies navigation
         return new HigoStudyCaseDetailPage(driver);
     }
 }
