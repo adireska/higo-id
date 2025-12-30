@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-30T22:29:55 WIB" name="HigoTest" finished-at="2025-12-30T22:30:06 WIB" duration-ms="11423">
+  <suite started-at="2025-12-30T22:48:05 WIB" name="HigoTest" finished-at="2025-12-30T22:49:16 WIB" duration-ms="71496">
     <groups>
     </groups>
-    <test started-at="2025-12-30T22:29:55 WIB" name="Higo ID Test" finished-at="2025-12-30T22:30:06 WIB" duration-ms="11423">
-      <class name="com.higo.id.tests.HigoContactTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:29:55 WIB" name="setup" finished-at="2025-12-30T22:29:58 WIB" duration-ms="3222" status="PASS">
+    <test started-at="2025-12-30T22:48:05 WIB" name="Higo ID Test" finished-at="2025-12-30T22:49:16 WIB" duration-ms="71496">
+      <class name="com.higo.id.tests.HigoHomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:05 WIB" name="setup" finished-at="2025-12-30T22:48:10 WIB" duration-ms="4879" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:29:58 WIB" name="setupPage" finished-at="2025-12-30T22:29:58 WIB" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:10 WIB" name="setupPage" finished-at="2025-12-30T22:48:10 WIB" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="testContactFormNegative()[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:29:58 WIB" name="testContactFormNegative" finished-at="2025-12-30T22:30:00 WIB" duration-ms="1833" status="PASS">
+        <test-method signature="testHomePageLoad()[pri:1, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:10 WIB" name="testHomePageLoad" description="Verify Home Page Load and Logo Visibility" finished-at="2025-12-30T22:48:10 WIB" duration-ms="382" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testContactFormNegative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:30:00 WIB" name="teardown" finished-at="2025-12-30T22:30:00 WIB" duration-ms="277" status="PASS">
+        </test-method> <!-- testHomePageLoad -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:10 WIB" name="teardown" finished-at="2025-12-30T22:48:11 WIB" duration-ms="1181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:30:00 WIB" name="setup" finished-at="2025-12-30T22:30:02 WIB" duration-ms="1818" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:11 WIB" name="setup" finished-at="2025-12-30T22:48:13 WIB" duration-ms="1554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,347 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:30:02 WIB" name="setupPage" finished-at="2025-12-30T22:30:02 WIB" duration-ms="271" status="PASS">
+        <test-method signature="testWifiAdvertisingSubMenu()[pri:2, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:13 WIB" name="testWifiAdvertisingSubMenu" description="Verify WiFi Advertising Submenu Navigation" finished-at="2025-12-30T22:48:14 WIB" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWifiAdvertisingSubMenu -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:13 WIB" name="setupPage" finished-at="2025-12-30T22:48:13 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="testContactFormPositive()[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:30:02 WIB" name="testContactFormPositive" finished-at="2025-12-30T22:30:05 WIB" duration-ms="2548" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:14 WIB" name="teardown" finished-at="2025-12-30T22:48:15 WIB" duration-ms="1213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:15 WIB" name="setup" finished-at="2025-12-30T22:48:17 WIB" duration-ms="1549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHigoSpotSubMenu()[pri:3, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:17 WIB" name="testHigoSpotSubMenu" description="Verify HIGOspot Submenu Navigation" finished-at="2025-12-30T22:48:18 WIB" duration-ms="1545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHigoSpotSubMenu -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:17 WIB" name="setupPage" finished-at="2025-12-30T22:48:17 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:18 WIB" name="teardown" finished-at="2025-12-30T22:48:19 WIB" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:19 WIB" name="setup" finished-at="2025-12-30T22:48:20 WIB" duration-ms="1559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testIntegratedDigitalAgencySubMenu()[pri:4, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:20 WIB" name="testIntegratedDigitalAgencySubMenu" description="Verify Integrated Digital Agency Submenu Navigation" finished-at="2025-12-30T22:48:21 WIB" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIntegratedDigitalAgencySubMenu -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:20 WIB" name="setupPage" finished-at="2025-12-30T22:48:20 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:21 WIB" name="teardown" finished-at="2025-12-30T22:48:22 WIB" duration-ms="1184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:22 WIB" name="setup" finished-at="2025-12-30T22:48:24 WIB" duration-ms="1547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSpecioAiSubMenu()[pri:5, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:24 WIB" name="testSpecioAiSubMenu" description="Verify Specio AI Submenu Navigation" finished-at="2025-12-30T22:48:26 WIB" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpecioAiSubMenu -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:24 WIB" name="setupPage" finished-at="2025-12-30T22:48:24 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:26 WIB" name="teardown" finished-at="2025-12-30T22:48:27 WIB" duration-ms="1232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:27 WIB" name="setup" finished-at="2025-12-30T22:48:29 WIB" duration-ms="1476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:29 WIB" name="setupPage" finished-at="2025-12-30T22:48:29 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="testAboutUsNavigation()[pri:6, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:29 WIB" name="testAboutUsNavigation" description="Verify About Us Navigation" finished-at="2025-12-30T22:48:30 WIB" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAboutUsNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:30 WIB" name="teardown" finished-at="2025-12-30T22:48:31 WIB" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:31 WIB" name="setup" finished-at="2025-12-30T22:48:33 WIB" duration-ms="2394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testStudyCaseNavigation()[pri:7, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:33 WIB" name="testStudyCaseNavigation" description="Verify Study Case Navigation" finished-at="2025-12-30T22:48:38 WIB" duration-ms="5092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStudyCaseNavigation -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:33 WIB" name="setupPage" finished-at="2025-12-30T22:48:33 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:38 WIB" name="teardown" finished-at="2025-12-30T22:48:40 WIB" duration-ms="1174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:40 WIB" name="setup" finished-at="2025-12-30T22:48:41 WIB" duration-ms="1614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:41 WIB" name="setupPage" finished-at="2025-12-30T22:48:41 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="testBlogNavigation()[pri:8, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:41 WIB" name="testBlogNavigation" description="Verify Blog Navigation" finished-at="2025-12-30T22:48:42 WIB" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlogNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoHomePageTest@6d763516]" started-at="2025-12-30T22:48:42 WIB" name="teardown" finished-at="2025-12-30T22:48:42 WIB" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.higo.id.tests.HigoHomePageTest -->
+      <class name="com.higo.id.tests.HigoBlogTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:42 WIB" name="setup" finished-at="2025-12-30T22:48:44 WIB" duration-ms="1535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBlogCategoriesFilter(java.lang.String)[pri:1, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:44 WIB" name="testBlogCategoriesFilter" description="Verify Blog Page Categories Filter" data-provider="blogCategories" finished-at="2025-12-30T22:48:47 WIB" duration-ms="2594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HIGOes Update]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlogCategoriesFilter -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:44 WIB" name="setupPage" finished-at="2025-12-30T22:48:44 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:47 WIB" name="teardown" finished-at="2025-12-30T22:48:47 WIB" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:47 WIB" name="setup" finished-at="2025-12-30T22:48:48 WIB" duration-ms="1550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBlogAllFilter()[pri:2, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:48 WIB" name="testBlogAllFilter" description="Verify &#039;All&#039; Filter" finished-at="2025-12-30T22:48:51 WIB" duration-ms="2580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlogAllFilter -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:48 WIB" name="setupPage" finished-at="2025-12-30T22:48:48 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoBlogTest@692f203f]" started-at="2025-12-30T22:48:51 WIB" name="teardown" finished-at="2025-12-30T22:48:51 WIB" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.higo.id.tests.HigoBlogTest -->
+      <class name="com.higo.id.tests.HigoStudyCaseTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:48:51 WIB" name="setup" finished-at="2025-12-30T22:48:53 WIB" duration-ms="1489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHigoSpotStudyCaseDetail()[pri:1, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:48:53 WIB" name="testHigoSpotStudyCaseDetail" description="Verify HIGOspot Sudy Case Detail" finished-at="2025-12-30T22:48:59 WIB" duration-ms="6137" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Header image is not displayed on the Study Case detail page for Candi Borobudur expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Header image is not displayed on the Study Case detail page for Candi Borobudur expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.higo.id.tests.HigoStudyCaseTest.testHigoSpotStudyCaseDetail(HigoStudyCaseTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHigoSpotStudyCaseDetail -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:48:53 WIB" name="setupPage" finished-at="2025-12-30T22:48:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:48:59 WIB" name="teardown" finished-at="2025-12-30T22:48:59 WIB" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:48:59 WIB" name="setup" finished-at="2025-12-30T22:49:00 WIB" duration-ms="1529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:49:00 WIB" name="setupPage" finished-at="2025-12-30T22:49:00 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="testIdeafestStudyCaseDetail()[pri:2, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:49:00 WIB" name="testIdeafestStudyCaseDetail" description="Verify Ideafest Study Case Detail" finished-at="2025-12-30T22:49:07 WIB" duration-ms="6167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIdeafestStudyCaseDetail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoStudyCaseTest@48f2bd5b]" started-at="2025-12-30T22:49:07 WIB" name="teardown" finished-at="2025-12-30T22:49:07 WIB" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.higo.id.tests.HigoStudyCaseTest -->
+      <class name="com.higo.id.tests.HigoContactTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:07 WIB" name="setup" finished-at="2025-12-30T22:49:08 WIB" duration-ms="1526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:08 WIB" name="setupPage" finished-at="2025-12-30T22:49:08 WIB" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="testContactFormNegative()[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:08 WIB" name="testContactFormNegative" finished-at="2025-12-30T22:49:10 WIB" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactFormNegative -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:10 WIB" name="teardown" finished-at="2025-12-30T22:49:11 WIB" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:11 WIB" name="setup" finished-at="2025-12-30T22:49:13 WIB" duration-ms="1706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://higo.id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:13 WIB" name="setupPage" finished-at="2025-12-30T22:49:13 WIB" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPage -->
+        <test-method signature="testContactFormPositive()[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:13 WIB" name="testContactFormPositive" finished-at="2025-12-30T22:49:15 WIB" duration-ms="2108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactFormPositive -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoContactTest@7c729a55]" started-at="2025-12-30T22:30:05 WIB" name="teardown" finished-at="2025-12-30T22:30:06 WIB" duration-ms="1283" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.higo.id.tests.HigoContactTest@5656be13]" started-at="2025-12-30T22:49:15 WIB" name="teardown" finished-at="2025-12-30T22:49:16 WIB" duration-ms="1195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

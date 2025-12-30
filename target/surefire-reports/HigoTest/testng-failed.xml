@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HigoTest]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="baseURL" value="https://higo.id"/>
+  <listeners>
+    <listener class-name="com.higo.id.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Higo ID Test(failed)" verbose="0">
+    <parameter name="password" value="-"/>
+    <parameter name="username" value="-"/>
+    <classes>
+      <class name="com.higo.id.tests.HigoStudyCaseTest">
+        <methods>
+          <include name="testHigoSpotStudyCaseDetail"/>
+          <include name="setupPage"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.higo.id.tests.HigoStudyCaseTest -->
+    </classes>
+  </test> <!-- Higo ID Test(failed) -->
+</suite> <!-- Failed suite [HigoTest] -->

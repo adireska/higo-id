@@ -15,7 +15,7 @@ public class HigoHomePageTest extends BaseTest {
         homePage = new HigoHomePage(getDriver());
     }
 
-    @Test(description = "Verify Home Page Load and Logo Visibility", priority = 1, enabled = false)
+    @Test(description = "Verify Home Page Load and Logo Visibility", priority = 1, enabled = true)
     public void testHomePageLoad() {
         String title = homePage.getTitle();
         System.out.println("Page Title: " + title);
@@ -24,13 +24,11 @@ public class HigoHomePageTest extends BaseTest {
                 homePage.getTitle().contains("tech marketing ecosystem")
                         || homePage.getTitle().contains("LifetimeLoyalCustomers"),
                 "Title mismatch. Actual title is: [" + homePage.getTitle() + "]");
-
-        // Verify logo
         boolean isLogoVisible = homePage.isLogoDisplayed();
         Assert.assertTrue(isLogoVisible, "Logo should be displayed on the home page");
     }
 
-    @Test(description = "Verify WiFi Advertising Submenu Navigation", priority = 2, enabled = false)
+    @Test(description = "Verify WiFi Advertising Submenu Navigation", priority = 2, enabled = true)
     public void testWifiAdvertisingSubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.WIFI_ADVERTISING;
         homePage.selectHigoServiceSubMenu(service);
@@ -45,7 +43,7 @@ public class HigoHomePageTest extends BaseTest {
                         " but got: " + currentUrl);
     }
 
-    @Test(description = "Verify HIGOspot Submenu Navigation", priority = 3, enabled = false)
+    @Test(description = "Verify HIGOspot Submenu Navigation", priority = 3, enabled = true)
     public void testHigoSpotSubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.HIGO_SPOT;
         homePage.selectHigoServiceSubMenu(service);
@@ -60,7 +58,7 @@ public class HigoHomePageTest extends BaseTest {
                         " but got: " + currentUrl);
     }
 
-    @Test(description = "Verify Integrated Digital Agency Submenu Navigation", priority = 4, enabled = false)
+    @Test(description = "Verify Integrated Digital Agency Submenu Navigation", priority = 4, enabled = true)
     public void testIntegratedDigitalAgencySubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.INTEGRATED_DIGITAL_AGENCY;
         homePage.selectHigoServiceSubMenu(service);
@@ -75,7 +73,7 @@ public class HigoHomePageTest extends BaseTest {
                         " but got: " + currentUrl);
     }
 
-    @Test(description = "Verify Specio AI Submenu Navigation", priority = 5, enabled = false)
+    @Test(description = "Verify Specio AI Submenu Navigation", priority = 5, enabled = true)
     public void testSpecioAiSubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.SPECIO_AI;
         String originalWindow = getDriver().getWindowHandle();
@@ -94,7 +92,7 @@ public class HigoHomePageTest extends BaseTest {
         getDriver().switchTo().window(originalWindow);
     }
 
-    @Test(enabled = false, description = "Verify About Us Navigation", priority = 6)
+    @Test(enabled = true, description = "Verify About Us Navigation", priority = 6)
     public void testAboutUsNavigation() {
         homePage.clickAboutUs();
         Assert.assertTrue(homePage.isAboutUsPageLoaded(), "Failed to navigate to About Us page");
