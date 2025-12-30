@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HigoTest" parallel="false">
+
+  <!-- Global parameter -->
+  <parameter name="baseURL" value="https://higo.id"/>
+
+  <listeners>
+        <listener class-name="com.higo.id.listeners.TestListener"/>
+  </listeners>
+
+  <test name="Higo ID Test">
+    <parameter name="username" value="-"/>
+    <parameter name="password" value="-"/>
+    <classes>
+      <class name="com.higo.id.tests.HigoHomePageTest"/>
+      <!-- <class name="com.higo.id.tests.HigoContactTest"/> -->
+    </classes>
+  </test>
+
+
+</suite>
