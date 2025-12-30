@@ -1,7 +1,11 @@
+com\higo\id\pages\HigoBlogPage.class
 com\higo\id\pages\HigoHomePage$HigoServiceSubMenu.class
+com\higo\id\pages\HigoStudyCasePage.class
 com\higo\id\pages\HigoContactPage.class
+com\higo\id\pages\HigoStudyCaseDetailPage.class
 com\higo\id\pages\HigoHomePage.class
 com\higo\id\pages\HigoAboutPage.class
 com\higo\id\utils\DriverUtils.class
+com\higo\id\pages\HigoStudyCasePage$StudyCaseTab.class
 com\higo\id\utils\ExtentManager.class
 com\higo\id\base\BaseTest.class

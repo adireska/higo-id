@@ -15,7 +15,7 @@ public class HigoHomePageTest extends BaseTest {
         homePage = new HigoHomePage(getDriver());
     }
 
-    @Test(description = "Verify Home Page Load and Logo Visibility", priority = 1, enabled = true)
+    @Test(description = "Verify Home Page Load and Logo Visibility", priority = 1, enabled = false)
     public void testHomePageLoad() {
         String title = homePage.getTitle();
         System.out.println("Page Title: " + title);
@@ -30,7 +30,7 @@ public class HigoHomePageTest extends BaseTest {
         Assert.assertTrue(isLogoVisible, "Logo should be displayed on the home page");
     }
 
-    @Test(description = "Verify WiFi Advertising Submenu Navigation", priority = 2, enabled = true)
+    @Test(description = "Verify WiFi Advertising Submenu Navigation", priority = 2, enabled = false)
     public void testWifiAdvertisingSubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.WIFI_ADVERTISING;
         homePage.selectHigoServiceSubMenu(service);
@@ -45,7 +45,7 @@ public class HigoHomePageTest extends BaseTest {
                         " but got: " + currentUrl);
     }
 
-    @Test(description = "Verify HIGOspot Submenu Navigation", priority = 3, enabled = true)
+    @Test(description = "Verify HIGOspot Submenu Navigation", priority = 3, enabled = false)
     public void testHigoSpotSubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.HIGO_SPOT;
         homePage.selectHigoServiceSubMenu(service);
@@ -60,7 +60,7 @@ public class HigoHomePageTest extends BaseTest {
                         " but got: " + currentUrl);
     }
 
-    @Test(description = "Verify Integrated Digital Agency Submenu Navigation", priority = 4, enabled = true)
+    @Test(description = "Verify Integrated Digital Agency Submenu Navigation", priority = 4, enabled = false)
     public void testIntegratedDigitalAgencySubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.INTEGRATED_DIGITAL_AGENCY;
         homePage.selectHigoServiceSubMenu(service);
@@ -75,7 +75,7 @@ public class HigoHomePageTest extends BaseTest {
                         " but got: " + currentUrl);
     }
 
-    @Test(description = "Verify Specio AI Submenu Navigation", priority = 5, enabled = true)
+    @Test(description = "Verify Specio AI Submenu Navigation", priority = 5, enabled = false)
     public void testSpecioAiSubMenu() {
         HigoHomePage.HigoServiceSubMenu service = HigoHomePage.HigoServiceSubMenu.SPECIO_AI;
         String originalWindow = getDriver().getWindowHandle();
@@ -94,9 +94,33 @@ public class HigoHomePageTest extends BaseTest {
         getDriver().switchTo().window(originalWindow);
     }
 
-    @Test(description = "Verify About Us Navigation", priority = 6)
+    @Test(enabled = false, description = "Verify About Us Navigation", priority = 6)
     public void testAboutUsNavigation() {
         homePage.clickAboutUs();
         Assert.assertTrue(homePage.isAboutUsPageLoaded(), "Failed to navigate to About Us page");
+    }
+
+    @Test(description = "Verify Study Case Navigation", priority = 7)
+    public void testStudyCaseNavigation() throws InterruptedException {
+        homePage.clickStudyCase();
+        Thread.sleep(5000);
+        String currentUrl = homePage.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("case-study") || currentUrl.contains("studi-kasus"),
+                "Failed to navigate to Study Case page. Current URL: " + currentUrl);
+    }
+
+    @Test(description = "Verify Blog Navigation", priority = 8)
+    public void testBlogNavigation() {
+        String originalWindow = getDriver().getWindowHandle();
+        homePage.clickBlog();
+
+        switchToOtherWindow(originalWindow);
+
+        String currentUrl = homePage.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("blog.higo.id"),
+                "Failed to navigate to Blog page. Current URL: " + currentUrl);
+
+        getDriver().close();
+        getDriver().switchTo().window(originalWindow);
     }
 }

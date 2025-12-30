@@ -12,7 +12,8 @@ public class ExtentManager {
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     private static String reportFileName = "Test-Automaton-Report.html";
     private static String fileSeperator = System.getProperty("file.separator");
-    private static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "TestReport";
+    private static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "target" + fileSeperator
+            + "surefire-reports";
     private static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;
 
     public static ExtentReports getInstance() {

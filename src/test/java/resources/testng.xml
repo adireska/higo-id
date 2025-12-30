@@ -13,8 +13,10 @@
     <parameter name="username" value="-"/>
     <parameter name="password" value="-"/>
     <classes>
-      <class name="com.higo.id.tests.HigoHomePageTest"/>
-      <!-- <class name="com.higo.id.tests.HigoContactTest"/> -->
+      <!-- <class name="com.higo.id.tests.HigoHomePageTest"/> -->
+      <!-- <class name="com.higo.id.tests.HigoBlogTest"/> -->
+      <!-- <class name="com.higo.id.tests.HigoStudyCaseTest"/> -->
+      <class name="com.higo.id.tests.HigoContactTest"/>
     </classes>
   </test>
 

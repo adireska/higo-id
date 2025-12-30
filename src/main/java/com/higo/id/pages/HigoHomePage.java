@@ -21,6 +21,7 @@ public class HigoHomePage {
             .xpath("//label[contains(@class, 'peer-checked:hidden')]//span[contains(text(),'Layanan HIGO')]");
     private By menuHoverStudiKasus = By
             .xpath("//label[contains(@class, 'peer-checked:hidden')]//span[contains(text(),'Studi Kasus')]");
+    private By menuBlog = By.xpath("//label[@class='peer-checked:hidden']//span[contains(text(),'Blog')]");
 
     // Constructor
     public HigoHomePage(WebDriver driver) {
@@ -37,6 +38,16 @@ public class HigoHomePage {
     public HigoAboutPage clickAboutUs() {
         wait.until(ExpectedConditions.elementToBeClickable(menuAboutUs)).click();
         return new HigoAboutPage(driver);
+    }
+
+    public HigoStudyCasePage clickStudyCase() {
+        wait.until(ExpectedConditions.elementToBeClickable(menuHoverStudiKasus)).click();
+        return new HigoStudyCasePage(driver);
+    }
+
+    public HigoBlogPage clickBlog() {
+        wait.until(ExpectedConditions.elementToBeClickable(menuBlog)).click();
+        return new HigoBlogPage(driver);
     }
 
     public boolean isAboutUsPageLoaded() {

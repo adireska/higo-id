@@ -1,3 +1,5 @@
+com\higo\id\tests\HigoStudyCaseTest.class
+com\higo\id\tests\HigoBlogTest.class
+com\higo\id\tests\HigoHomePageTest.class
 com\higo\id\tests\HigoContactTest.class
 com\higo\id\listeners\TestListener.class
-com\higo\id\tests\HigoHomePageTest.class
